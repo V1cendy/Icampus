@@ -1,0 +1,67 @@
+.content-room-summary {
+    background-color: #3f51b58f;
+    margin: 0.3em;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    width: 20vh;
+    min-height: 20vh;
+    color: white;
+    cursor: pointer;
+}
+
+.content-room-summary-title {
+    cursor: pointer;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 40px; 
+}
+
+.content-room-summary-icon img{
+    width: 75%;
+}
+.content-room-summary-name {
+    background-color:#3f51b5;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    border-top-left-radius: 1em;
+    margin: 0;
+    padding: 0;
+    flex: 3;
+}
+
+.content-room-summary-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.content-room-summary-name h4{
+    margin: 0.4em;
+    padding: 0;
+    text-align: center;
+    
+}
+
+.content-room-summary-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-room-summary-description p{
+    margin: 0.4em;
+    padding: 0;
+    text-align: center;
+}
+
+.slide-fwd-top{
+    transition: transform 0.25s; 
+}
+
+
+.slide-fwd-top:hover {
+    transform:translateY(-10px);
+  }
