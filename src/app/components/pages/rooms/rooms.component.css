@@ -22,14 +22,14 @@
     text-align: center;
 }
 
-.places-sumarry {
+.places-sumary {
     display: flex;
     flex-wrap: wrap;
     padding: 0.5em;
     min-width: 60vh;
     min-height: 75vh;
     /* background-color: aqua; */
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: flex-start;
 }
 /* .content-rooms-filter {
