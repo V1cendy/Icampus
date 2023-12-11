@@ -1,19 +1,37 @@
 import { Component, Input } from '@angular/core';
-import {MatIconModule} from '@angular/material/icon';
-import {MatTooltipModule} from '@angular/material/tooltip';
-import {MatButtonModule} from '@angular/material/button';
 
 @Component({
   selector: 'app-room-summary',
-  template: '{{nome}}',
+  template: '{{ name, description }}',
   templateUrl: './room-summary.component.html',
   styleUrls: ['./room-summary.component.css'],
   standalone: true,
-  imports: [MatButtonModule, MatTooltipModule, MatIconModule],
 })
-export class RoomSummaryComponent {
+  export class RoomSummaryComponent {
+  
+  @Input() name:string = "";
+  @Input() description:string = "";
+  @Input() tipo:string = "";
+  @Input() id:string = "";
+  
 
-  @Input() nome:string;
-  description:string = "Espaço reservado a persquisa e estudo."
-
+  constructor(){
+    this.name = ""
+    this.description = ""
+    this.tipo = ""
+    this.id = ""
+  }
+  
+  getImagemPorTipo(tipo: string): string {
+    switch (tipo) {
+      case '1':
+        return "../../../../assets/open-book.png";
+      case '2':
+        return "../../../../assets/enzyme.png";
+      case '3':
+        return '../../../../assets/monitor.png';
+      default:
+        return 'caminho-para-imagem-por-padrao.jpg';
+    }
+  }
 }

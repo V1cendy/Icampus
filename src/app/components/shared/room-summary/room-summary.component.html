@@ -1,13 +1,15 @@
-<div class="content-room-summary slide-fwd-top">
-    <label class="content-room-summary-title">
-        <div class="content-room-summary-name">
-            <h4>{{name}}</h4>
-        </div>
+<a routerLink="">
+    <div class="content-room-summary">
+        <label class="content-room-summary-title">
+            <div class="content-room-summary-name">
+                <h4>{{name}}</h4>
+            </div>
+        </label>
         <div class="content-room-summary-icon">
-            <img src="../../../../assets/monitor.png" alt="">
+            <img [src]="getImagemPorTipo(tipo)"alt="">
         </div>
-    </label>
-    <div class="content-room-summary-description">
-        <p>{{description}}</p>
+        <div class="content-room-summary-description">
+            <p>{{description}}</p>
+        </div>
     </div>
-</div>
+</a>
